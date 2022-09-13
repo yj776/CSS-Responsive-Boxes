@@ -1,3 +1,59 @@
 body {
   background: blanchedalmond;
 }
+
+.a, .b, .c{
+  border: 5px solid black;
+  margin: .4em;
+  text-align: center;
+  background-color: lightskyblue;
+  justify-content: center;
+  font-weight: 800;
+  font-size: xx-large;
+}
+
+.container{
+  display: flex;
+  width: auto;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3em;
+}
+
+.a{
+  flex-grow: 1.5;
+}
+.b{
+  min-height: 70vh;
+  flex-grow: 7;
+}
+
+.c{
+  flex-grow: 1.5;
+}
+
+.a,.b,.c{
+  display:flex;
+  align-items:center; 
+}
+
+.desktop {
+  display:flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .desktop{
+    flex-direction: row;
+
+  }
+  .a{
+    min-width: 100%;
+  }
+  .b{
+    min-width: 70%;
+  }
+  .c{
+    min-width: 25%;
+  }
