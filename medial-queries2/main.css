@@ -2,13 +2,30 @@ body {
   background: papayawhip;
 }
 
+/* .container {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cde{
+  display: flex;
+  flex-direction: row;
+}
+
+.a,.b,.c,.d,.e,.f{
+  border: .2em solid black;
+  justify-content: center;
+  margin: .4em;
+  text-align: center;
+  padding:1.5em;
+} */
 
 
 
 
-
-
-/* .container{
+.container{
   display: flex;
   width: auto;
   justify-content: space-between;
@@ -62,7 +79,7 @@ body {
 
 
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .cde{
     display: block;
     flex-direction: row;
