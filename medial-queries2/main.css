@@ -59,14 +59,13 @@ body {
   flex-grow: 1;
 }
 
+
 .b{
   flex-grow: 3;
 }
 
-
-
 .cde{
-  flex-grow: 1.5;
+  flex-grow: 1;
 }
 
 .c,.d,.e{
@@ -77,6 +76,43 @@ body {
   flex-grow: 1;
 }
 
+main{
+  border: .5em solid orange
+}
+
+section{
+  border: .5em solid red
+}
+
+@media (min-width: 600px) {
+
+  .b{
+    display: flex;
+    /* flex-direction; */
+    max-width: 100%;
+    max-height: auto;
+  }
+  .cde{
+    display:flex;
+    max-width: 100%;
+  }
+  .f{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  
+  section{
+    display: flex;
+    flex: row;
+    max-width: 70%;
+  }
+  }
 
 
 /* @media (min-width: 600px) {
