@@ -27,8 +27,8 @@ body {
 
 .container{
   display: flex;
-  width: auto;
-  justify-content: space-between;
+  min-width: 30vh;
+  /* justify-content: space-evenly; */
   flex-direction: column;
   text-align: center;
   min-height: 100vh;
@@ -51,38 +51,69 @@ body {
 
 .cde{
   display: flex;
+  justify-content: row;
   justify-content: space-between;
 }
 
 
-.a{
+section{
+  display: flex;
+  flex-direction: column;
+  flex-grow: .8;
+  justify-content: space-between;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-grow: 2;
+}
+
+main .b{
+  flex-grow: 2;
+}
+
+main .cde{
   flex-grow: 1;
 }
 
+.a{
+  flex-grow: .15;
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+}
 
-.b{
+.f{
+  display: flex;
+  flex-grow: .5
+}
+
+/* .b{
   flex-grow: 3;
 }
 
 .cde{
   flex-grow: 1;
-}
+} */
 
 .c,.d,.e{
-  min-width: 23%;
+  min-width: auto;
+  flex-grow: 1.5;
 }
 
-.f{
+/* .f{
   flex-grow: 1;
-}
+} */
 
-main{
-  border: .5em solid orange
-}
 
-section{
-  border: .5em solid red
-}
+
+/* .b{
+  min-width: 100%;
+} */
+
+
 
 @media (min-width: 600px) {
 
@@ -98,19 +129,20 @@ section{
   }
   .f{
     display: flex;
-    max-width: 100%;
+    min-width: 20%;
     height: auto;
   }
   main{
     display: flex;
     flex-direction: column;
-    min-width: 100%;
+    min-width: 70%;
   }
   
   section{
     display: flex;
-    flex: row;
-    max-width: 70%;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-evenly;
   }
   }
 
