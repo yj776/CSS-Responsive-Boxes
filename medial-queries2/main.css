@@ -82,7 +82,7 @@ main .cde{
   flex-grow: .15;
   display: flex;
   justify-content: center;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .f{
@@ -90,28 +90,10 @@ main .cde{
   flex-grow: .5
 }
 
-/* .b{
-  flex-grow: 3;
-}
-
-.cde{
-  flex-grow: 1;
-} */
-
 .c,.d,.e{
   min-width: auto;
   flex-grow: 1.5;
 }
-
-/* .f{
-  flex-grow: 1;
-} */
-
-
-
-/* .b{
-  min-width: 100%;
-} */
 
 
 
@@ -119,7 +101,6 @@ main .cde{
 
   .b{
     display: flex;
-    /* flex-direction; */
     max-width: 100%;
     max-height: auto;
   }
@@ -145,13 +126,3 @@ main .cde{
     justify-content: space-evenly;
   }
   }
-
-
-/* @media (min-width: 600px) {
-  .cde{
-    display: block;
-    flex-direction: row;
-    max-width: 100%;
-    max-height: auto;
-  }
-  } */
