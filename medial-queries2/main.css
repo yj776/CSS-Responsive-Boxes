@@ -2,33 +2,10 @@ body {
   background: papayawhip;
 }
 
-/* .container {
-  display: flex;
-  width: auto;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.cde{
-  display: flex;
-  flex-direction: row;
-}
-
-.a,.b,.c,.d,.e,.f{
-  border: .2em solid black;
-  justify-content: center;
-  margin: .4em;
-  text-align: center;
-  padding:1.5em;
-} */
-
-
-
 
 .container{
   display: flex;
   min-width: 30vh;
-  /* justify-content: space-evenly; */
   flex-direction: column;
   text-align: center;
   min-height: 100vh;
